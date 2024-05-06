@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Registration</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: red;
+      }
+      div {
+        margin-left: 80px;
+      }
+      input {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Employee Registration Form</h1>
+
+    <form action="submit_employee.php" method="post">
+      <div>
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Mr.</label>
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Mrs.</label>
+        <input type="radio" id="Ms." name="gender" value="Ms." />
+        <label for="Ms.">Ms.</label><br /><br />
+      </div>
+
+      <label for="fname">First Name</label>
+      <input
+        placeholder="First Name"
+        id="fname"
+        name="fname"
+        required
+      /><br /><br />
+
+      <label for="lname">Last Name </label>
+      <input
+        placeholder="Last Name"
+        id="lname"
+        name="lname"
+        required
+      /><br /><br />
+
+      <label for="email">Mail Address1</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="email">Mail Address2</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="cityname">City</label>
+      <input type="text" id="cityname" /><br /><br />
+      <label for="statename">State</label>
+      <select name="statename" id="statename">
+        <option value="statename">Gujarat</option>
+        <option value="statename">MP</option></select
+      ><br /><br />
+      <label for="zipcode">Zip</label>
+      <input type="text" name="zipcode" id="zipcode" /><br /><br />
+      <label for="upload">Upload Photo</label>
+      <input type="file" /><br /><br />
+      <label for="email">Email</label>
+      <input type="text" id="email" /><br /><br />
+      <label for="mobile">Mobile</label>
+      <input placeholder="+91" /><br />
+      <label for="checkbox">Languages Known</label>
+      <input type="checkbox" id="checkbox1" name="checkbox1" />
+      <label for="checkbox1">Gujarati</label><br />
+      <input type="checkbox" id="checkbox2" name="checkbox2" />
+      <label for="checkbox2">English</label><br />
+      <input type="checkbox" id="checkbox3" name="checkbox3" />
+      <label for="checkbox3">Javascript</label><br />
+      <input type="checkbox" id="checkbox3" name="checkbox3" />
+      <label for="checkbox3">Hindi</label><br />
+
+      <label for="bio">Additional information</label>
+      <textarea id="bio" name="bio" rows="4" cols="50">Optional</textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>
